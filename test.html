@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <title>Sticky Nav</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        /* Sektionen du scroller forbi først */
+        .hero-section {
+            height: 100vh; /* Fyld hele skærmens højde */
+            background-color: #4682B4;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+
+        /* Din navigation */
+        nav {
+            /* De magiske linjer */
+            position: sticky;
+            top: 0; /* Klæb fast 0px fra toppen af skærmen */
+
+            /* Styling for synlighed */
+            background-color: #333;
+            padding: 1rem;
+            width: 100%;
+            z-index: 1000; /* Sørger for at den ligger ovenpå andet indhold */
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Resten af sidens indhold */
+        .content {
+            padding: 2rem;
+            height: 1500px; /* Bare for at have noget at scrolle i */
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero-section">
+    <h1>Scroll ned forbi mig!</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Hjem</a></li>
+        <li><a href="#">Om os</a></li>
+        <li><a href="#">Produkter</a></li>
+        <li><a href="#">Kontakt</a></li>
+    </ul>
+</nav>
+
+<main class="content">
+    <h2>Sidens indhold</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+</main>
+
+</body>
+</html>

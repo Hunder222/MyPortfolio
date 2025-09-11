@@ -1,0 +1,317 @@
+{
+    outline-style: dotted;
+    outline-color: red;
+    outline-offset: -1px;
+} /*kanter på elementer til visualisere design*/
+
+
+
+/*<editor-fold desc="Generelle styles">*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins, serif;
+    color: #C1C1D0;
+    background-color: transparent;
+}
+
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    background-color: #212124;
+
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.sectionHeader{
+    text-align: center;
+    padding-top: 12vh;
+    padding-bottom: 3vh;
+    font-size: 5vh;
+    color: #29abe2;
+}
+
+.boxShadow{
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/*</editor-fold>*/
+
+
+
+/*<editor-fold desc="Header styles">*/
+
+header section{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+    scroll-snap-align: center;
+    margin-bottom: 3vh;
+}
+
+header img{
+    width: 50vw;
+    margin-bottom: 20vh;
+    margin-top: 10vh;
+    background-color: #444444;
+    border-radius: 4vw;
+    padding: 2px
+}
+
+header h1 {
+    padding-top: 10vh;
+    font-size: 7vh;
+    color: #29abe2;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: #212124;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li{
+    padding: 1rem;
+}
+/*</editor-fold>*/
+
+
+
+/*<editor-fold desc="Section #aboutMe">*/
+#aboutMe div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+#aboutMe p{
+    text-wrap: wrap;
+    max-width: 28rem;
+    text-indent: -1rem;
+    padding-left: 1rem;
+}
+
+#aboutMe article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #333335;
+    border-radius: 3vh;
+    padding: 4vh;
+}
+
+#aboutMe img{
+    height: 30vw;
+    border-radius: 3vh;
+    padding: 1vh;
+    background-color: #29abe2;
+}
+
+#aboutMe ul{
+    padding-left: 3rem;
+}
+
+#aboutMe li{
+    padding-bottom: .5rem;
+}
+
+#aboutMeFooter ul{
+    display: flex;
+    align-items: center;
+}
+
+#aboutMeFooter li{
+    list-style-type: none;
+    padding-right: .5rem;
+}
+
+#aboutMeFooter img{
+    height: 3rem;
+    width: 3rem;
+}
+
+#aboutMeFooter p{
+    font-size: 1.25rem;
+}
+/*</editor-fold>*/
+
+
+
+/*<editor-fold desc="Section #education">*/
+
+#education div{
+    display: flex;
+    justify-self: center;
+    flex-direction: row;
+    width: 95vw;
+    overflow: hidden;
+    border-radius: 3vh;
+    @media screen {
+
+    }
+}
+
+#education article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 70vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    transition: flex-grow 0.3s ease-out;
+}
+
+.tintOverlay{
+    background-image:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.45),
+                    rgba(0, 0, 0, 0.35)
+            ), var(--url);
+}
+
+.hoverText{
+    display: none;
+    text-align: justify;
+    margin: 2vw;
+    width: 43vw;
+    overflow: hidden;
+}
+
+#education p, h3{
+    background-color: transparent;
+}
+
+#education article:hover {
+    flex-grow: 2;
+    background-image:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.8),
+                    rgba(0, 0, 0, 0.6)
+            ), var(--url);
+}
+
+#education article:hover .hoverText{
+    display: block;
+}
+
+/*</editor-fold>*/
+
+
+
+/*<editor-fold desc="Section #skills">*/
+
+#skills section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills h3{
+    padding-bottom: 1vw;
+}
+
+#skills ul{
+    padding-left: 1.5vw;
+}
+
+.carousel{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+    padding: 3vh;
+}
+
+.carouselItem {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #333335;
+    border-radius: 5vw;
+    padding: 2vw;
+    min-width: 35vw;
+    align-items: center;
+
+    transform: scale(0.90);
+    filter: brightness(0.75);
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    margin: 0 -12vw;
+    cursor: pointer;
+}
+.carouselItem img{
+    height: 12vw;
+    margin-left: 4vw;
+    background-color: #29abe2;
+    border-radius: 3vw;
+}
+
+.carouselItem:nth-child(3){
+    transform: scale(1);
+    filter: brightness(1);
+    z-index: 2;
+}
+
+.carousel:hover .carouselItem:nth-child(3){
+    transform: scale(0.90);
+    filter: brightness(0.75);
+    z-index: 1;
+}
+
+.carousel:hover .carouselItem:hover {
+    transform: scale(1);
+    filter: brightness(1);
+    z-index: 2;
+    margin: 0 -10vh 0 0;
+}
+
+/*</editor-fold>*/
+
+
+
+/*<editor-fold desc="Section #business">*/
+#business {
+    justify-items: center;
+    max-width: 28rem;
+
+}
+
+#business p{
+    text-wrap: wrap;
+    text-indent: -1rem;
+    padding-left: 1rem;
+    text-align: justify;
+}
+
+
+/*</editor-fold>*/
