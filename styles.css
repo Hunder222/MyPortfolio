@@ -26,7 +26,7 @@ html{
 
 .backgroundImg{
     position: fixed;
-    background-image: url("assets/portfolio-bg.svg");
+    background-image: url("assets/portfolio-BG.svg");
     background-size: cover;
     height: 100vh;
     width: 100vw;

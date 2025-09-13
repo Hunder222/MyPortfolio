@@ -42,6 +42,8 @@ function updateLines() {
 
 
 
+
+
 // variabler til updateCarousel function
 const imgs = document.querySelectorAll('.imgCarouselItem');
 const txts = document.querySelectorAll('.txtCarouselItem');
@@ -89,6 +91,8 @@ btnPrev.addEventListener('click', () => {
 
 
 
+
+
 // variabler til updateHueRotation function
 const backgroundElement = document.querySelector('.backgroundImg');
 
@@ -109,6 +113,8 @@ function updateHueRotation() {
 
 // kør updateHueRotation hver gang der scrolles
 window.addEventListener('scroll', updateHueRotation);
+
+
 
 
 
@@ -141,17 +147,49 @@ callDiv.addEventListener('mouseover', () => {
 
 
 
+
+
+
+
+function equalizerTitelAnimation(speed) {
+    let intervalId = 0; // variabel til frame index
+
+    // Array af frames
+    const frames = [
+        "🎵▅▃▂▅▃▅▃█🎵",
+        "🎵▃▂▅▇▅▃▂▅🎵",
+        "🎵▅▇▃▇▇▃▅▇🎵",
+        "🎵▅▇▃▇▅▃▂▅🎵",
+        "🎵█▇▅▃▇█▇▅🎵",
+        "🎵█▇▅▃█▇▅▃🎵",
+        "🎵▇▅▇▂▇▅▃▇🎵",
+        "🎵█▇▅▃▇▅▇▂🎵",
+        "🎵▃▂▅▇▇▃▅▇🎵",
+        "🎵▅▃▂▅▃▂▅▇🎵",
+    ];
+
+    let frameIndex = 0;
+
+    // opdatere titlen til at matche den frame vi nået til
+    function startAnimation() {
+        intervalId = setInterval(() => {
+            document.title = frames[frameIndex];
+            frameIndex = (frameIndex + 1) % frames.length; // % er en Modulo-operator, der fortæller at array skal loop
+        }, speed);
+    }
+    startAnimation();
+}
+
+
+
+
+
+
 // Sørger for scripts kører når siden loader
 updateLines();
 updateCarousel(activeSlideIndex);
 updateHueRotation();
-
-
-
-
-
-
-
+equalizerTitelAnimation(100); //Frame update speed
 
 
 
