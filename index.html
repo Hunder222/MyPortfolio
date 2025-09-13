@@ -15,33 +15,35 @@
 </head>
 
 <body>
+<div class="backgroundImg"></div>
 <header id="header">
     <section>
         <h1>Velkommen til min Portføjle!</h1>
-        <img src="name1.gif" alt="Elliot Lyhne name GIF" class="boxShadow">
+        <img src="assets/name1.gif" alt="Elliot Lyhne name GIF" class="boxShadow">
     </section>
 </header>
-    <nav>
-        <ul>
-            <li><a href="#aboutMe">Om mig</a></li>
-            <li><a href="#education">Uddannelse</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#business">Erhverv</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="#aboutMe">Om mig</a></li>
+        <li><a href="#education">Uddannelse</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#business">Erhverv</a></li>
+        <li><a href="#hobbies">Hobby</a></li>
+    </ul>
+</nav>
 
 <main>
     <section id="aboutMe">
-        <h2 class="sectionHeader">Kort om mig</h2>
+        <h2 class="sectionHeader">Om mig</h2>
         <div>
-            <img src="Elliot.jpg" alt="Billede af Elliot" class="boxShadow">
+            <img src="assets/Elliot.jpg" alt="Billede af Elliot" id="elliotImg" class="boxShadow">
             <article class="boxShadow">
                 <p>Mit navn er Elliot Theodor Lyhne Christensen og jeg er 23 år gammel</p>
                 <p>Jeg har bopæl i Søborg, hvor jeg bor med min kæreste.</p>
-                <p>Til dagligt studere jeg IT-Arkitekt på EK (Erhvervsakademi København).</p>
-                <p>Derudover arbejder deltid i Elgiganten Nørrebrogade hvor jeg har arbejdet i næsten 2 år som Sales Advisor.</p>
+                <p>Til dagligt studerer jeg IT-Arkitektur på EK (Erhvervsakademi København).</p>
+                <p>Derudover arbejder deltid i Elgiganten Nørrebrogade, hvor jeg har arbejdet i næsten 2 år som Sales Advisor.</p>
                 <p>Jeg er meget inspireret af hvordan vi i dag bruger systemer og teknologi til at lave værktøjer eller optimere hverdagsopgaver,</p>
-                <p>Har derfor mange software/hardware-færdigheder som:</p>
+                <p>Jeg har derfor mange software/hardware færdigheder som:</p>
                 <ul>
                     <li>Programmering</li>
                     <li>Grafisk Design</li>
@@ -52,68 +54,58 @@
         </div>
         <div id="aboutMeFooter">
             <ul>
-                <li><img src="BirthdayIcon.svg" alt="Birthday Icon" class="boxShadow"></li>
+                <li><img src="assets/BirthdayIcon.svg" alt="Birthday Icon" class="boxShadow"></li>
                 <li><p>28/12/2001</p></li>
             </ul>
             <ul>
-                <li><img src="LocationIcon.svg" alt="Location Icon" class="boxShadow"></li>
+                <li><img src="assets/LocationIcon.svg" alt="Location Icon" class="boxShadow"></li>
                 <li><p>2860 Søborg</p></li>
             </ul>
             <ul>
-                <li><img src="EducationIcon.svg" alt="Education Icon" class="boxShadow"></li>
+                <li><img src="assets/EducationIcon.svg" alt="Education Icon" class="boxShadow"></li>
                 <li><p>IT-Arkitekt</p></li>
             </ul>
         </div>
     </section>
+
     <section id="education">
         <h2 class="sectionHeader">Uddannelse</h2>
         <div class="boxShadow">
-            <article id="edu1" class="tintOverlay" style="--url: url(hoejer.jpg)">
+            <article id="edu1" class="tintOverlay" style="--url: url(assets/hoejer.jpg)">
                 <h3>2018-2019</h3>
                 <p>Højer Design Efterskole | SpilDesign og ESport</p>
-                <p class="hoverText">På Højer Design Efterskole gik jeg på linjen SpilDesign og ESport. I SpilDesign lærte jeg en masse om programmerings-sproget C#, med fokus på Unity Game Engine biblioteket, hvor jeg fik lavet spil til computer og mobil. <br>Her lærte jeg også en masse om 3D-modellering i Blender og Maya. <br>På ESport linjen spillede vi CS:GO, med fokus på kommunikation og taktik på hold.</p>
+                <p class="hoverText">På Højer Design Efterskole gik jeg på linjen SpilDesign og ESport. I SpilDesign lærte jeg en masse om programmeringssproget C#, med fokus på Unity Game Engine biblioteket, hvor jeg fik lavet spil til computer og mobil. <br>Her lærte jeg også en masse om 3D-modellering i Blender og Maya. <br>På ESport linjen spillede vi CS:GO, med fokus på kommunikation og taktik på hold.</p>
             </article>
-            <article id="edu2" class="tintOverlay" style="--url: url(haga.jpg)">
+            <article id="edu2" class="tintOverlay" style="--url: url(assets/haga.jpg)">
                 <h3>2019-2022</h3>
                 <p>Bagsværd Kostskole og Gymnasium | STX:<br> Kommunikation/IT A og Programmering B</p>
-                <p class="hoverText">På Bagsværd Kostskole boede jeg på kostskolen HAGA (Haralds Gave), 500m væk fra kostskolen var Bagsværd Kostskole og Gymnasium, hvor jeg læste STX linjen Kommunikation/IT A og Programmering B. Her har jeg lært en masse om medie kommunikation, kampagnemodeller og medieproduktion. <br>Programmering B var med fokus på Python, hvor jeg også gik videre til Phase 2 i ESA's Astro Pi challenge, hvor jeg skrev til program til en Raspberry Pi om bord på ISS, som samlede data om jordens magnetiske påvirking på ISS</p>
+                <p class="hoverText">På Bagsværd Kostskole boede jeg på kostskolen HAGA (Haralds Gave), 500m væk fra kostskolen var Bagsværd Kostskole og Gymnasium, hvor jeg læste STX linjen Kommunikation/IT A og Programmering B. Her har jeg lært en masse om mediekommunikation, kampagnemodeller og medieproduktion. <br>Programmering B var med fokus på Python, hvor jeg gik videre til Phase 2 i ESA's Astro Pi challenge, hvor jeg skrev et program til en Raspberry Pi om bord på ISS, som samlede data om jordens magnetiske påvirking på ISS' kredsløb.</p>
             </article>
-            <article id="edu3" class="tintOverlay" style="--url: url(ek.jpg)">
+            <article id="edu3" class="tintOverlay" style="--url: url(assets/ek.jpg)">
                 <h3>2025-2028</h3>
-                <p>Erhvervsøkonomi København | IT-Arkitekt </p>
-                <p class="hoverText">På EK læser jeg IT-Arkitekt, som er en uddannelse med fokus på full-stack projektledelse og udvikling af IT-systemer for B2C og B2B. <br>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Curabitur blandit</p>
+                <p>Erhvervsøkonomi København | IT-Arkitektur </p>
+                <p class="hoverText">På EK læser jeg IT-Arkitektur, som er en uddannelse med fokus på full-stack projektledelse og udvikling af IT-systemer for B2C og B2B. <br>Jeg går på nuværende tidspunkt på 1. semester, som indtil videre har været meget lærrigt. Jeg ser frem til 3½ spændende år på uddannelsen, og hvad min kommende karriere ellers bringer.</p>
             </article>
         </div>
     </section>
+
     <section id="skills">
         <h2 class="sectionHeader">Skills</h2> <!-- carousel -->
         <div class="carousel">
             <article class="carouselItem boxShadow">
-                    <img src="developer_board.svg" alt="">
                 <div>
                     <h3>Andet teknisk</h3>
                     <ul>
                         <li>Home Assistant | Erfaren</li>
                         <li>IT hardware håndtering | Erfaren</li>
+                        <li>IT-Cable Management | Erfaren</li>
                         <li>Netværk | Moderat</li>
                     </ul>
                 </div>
-
+                <img src="assets/developer_board.svg" alt="">
             </article>
             <article class="carouselItem boxShadow">
-                <img src="brush.svg" alt="">
-                <div>
-                    <h3>Kreativitet</h3>
-                    <ul>
-                        <li>Grafisk Design | Erfaren</li>
-                        <li>SketchUp | Moderat</li>
-                        <li>3D Blender | Moderat</li>
-                        <li>Musik produktion m. DAW | Basic</li>
-                    </ul>
-                </div>
-            </article>
-            <article class="carouselItem boxShadow">
-                <img src="code.svg" alt="s">
+                <img src="assets/code.svg" alt="s">
                 <div>
                     <h3>Programmering / Markup</h3>
                     <ul>
@@ -125,15 +117,102 @@
                     </ul>
                 </div>
             </article>
-        </div>
-    </section>
-    <section id="business">
-        <h2 class="sectionHeader">Erhvervs erfaring</h2>
-        <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Curabitur blandit tempus ardua ridiculus sed magna. Inmensae subtilitatis, obscuris et malesuada fames. Paullum deliquit, ponderibus modulisque suis ratio utitur. Pellentesque habitant morbi tristique senectus et netus. A communi observantia non est</p>
+            <article class="carouselItem boxShadow">
+                <img src="assets/brush.svg" alt="">
+                <div>
+                    <h3>Kreativitet</h3>
+                    <ul>
+                        <li>Grafisk Design (Adobe: Ai, Ps) | Erfaren</li>
+                        <li>SketchUp | Moderat</li>
+                        <li>3D Blender | Moderat</li>
+                        <li>Musik produktion m. DAW | Basic</li>
+                    </ul>
+                </div>
+            </article>
         </div>
     </section>
 
+    <section id="business">
+        <h2 class="sectionHeader">Erhvervs erfaring</h2>
+        <article id="floatingArticle">
+            <div class="floatingCard boxShadow" id="card1">
+                <div class="floatingFlexbox">
+                    <img src="assets/klikSecurity.png" alt="">
+                    <div>
+                        <h3>Sikkerhedsvagt</h3>
+                        <p>2020-2021</p>
+                        <p>KLIK Security</p>
+                    </div>
+                </div>
+                <p class="hoverText">Under corona-krisen stod jeg vagt på Brøndby og FCK stadion. Opgaven gik ud på at sørger for, at der var tryghed og sikkerhed blandt tilskurerne, samt at håndhæve corona-forsamlingsregler.</p>
+            </div>
+
+            <div class="floatingCard boxShadow" id="card2">
+                <div class="floatingFlexbox">
+                    <img src="assets/moveforce1.png" alt="">
+                    <div>
+                        <h3>IT-Projektleder</h3>
+                        <p>2021-2023</p>
+                        <p>MOVEFORCE</p>
+                    </div>
+                </div>
+                <p class="hoverText">Min stilling som IT-Projektleder handlede om at have styr på og håndtere virksomheders IT og comms, primært ved erhvervsflytning til nyt domicil. Jeg oplærte medarbejdere, i opsætning af IT-arbejdspladser og kabling af infrastrukturen derom etc.</p>
+            </div>
+
+            <div class="floatingCard boxShadow" id="card3">
+                <div class="floatingFlexbox">
+                    <img src="assets/Elgiganten.png" alt="">
+                    <div>
+                        <h3>Technology Sales Advisor</h3>
+                        <p>2024-i dag</p>
+                        <p>Elgiganten</p>
+                    </div>
+                </div>
+                <p class="hoverText">Som Sales Advisor hos Elgiganten, arbejder jeg som Trusted Advisor, hvor min primære opgave er at sørger for, at vejlede kunder der hvor elektronik kan blive teknisk og svært at forstå, i både TECH og HOME. Jeg afslog Senior stilling til fordel for uddannelse.</p>
+
+            </div>
+            <svg class="svg-container">
+                <line id="line1" class="svg-line"></line>
+                <line id="line2" class="svg-line"></line>
+            </svg>
+        </article>
+    </section>
+
+    <section id="hobbies">
+        <h2 class="sectionHeader">Mine hobbyer</h2>
+        <article>
+            <div class="txtCarousel">
+                <div class="txtCarouselItem active">
+                    <h3>Grafisk Design</h3>
+                    <p>I næsten 10 år har jeg haft stor interesse, for at lave grafisk design. Jeg er selvlært og har udført professionelt logo/branding og idé visualisering. Jeg er meget erfaren i Adobe Illustrator, men har også arbejdet meget i Adobe Photoshop, After Effects og Premiere Pro, samt 3D programmer som Blender til modellering og sketchUp til arkitektur.</p>
+                </div>
+                <div class="txtCarouselItem">
+                    <h3>Hardball</h3>
+                    <p>Jeg spiller hardball på Taastrup Skovbanen. Hardball er et aktivt holdspil, med våben der skyder små plastikkugler, hvor hvert spil kan have forskellige regler. Jeg har spillestilen "Mil-Sim" som handler om at søge efter realisme ift. valg af beklædning og våben.</p>
+                </div>
+                <div class="txtCarouselItem">
+                    <h3>Gaming</h3>
+                    <p>På min computer spiller jeg mest Satisfactory, som er et "Resource Management Game". I dette spil udfordres man matematisk for at opbygge og optimerer fabrikker.</p>
+                </div>
+                <div class="txtCarouselItem">
+                    <h3>Home Assistant</h3>
+                    <p>Jeg elsker at lege med IoT devices som smart home enheder. Jeg har en homeserver på en Raspberry Pi, som kører et lokalt bespoke smart home.</p>
+                </div>
+            </div>
+
+            <div class="imgCarousel">
+                <img src="assets/graphicsdesign.png" alt="graphics design" class="imgCarouselItem active">
+                <img src="assets/hardball.png" alt="Hardball" class="imgCarouselItem">
+                <img src="assets/satisfactory.jpg" alt="Gaming" class="imgCarouselItem">
+                <img src="assets/HASS.png" alt="HASS" class="imgCarouselItem">
+
+                <button class="carouselBtn carouselPrev">&lt;</button>
+                <button class="carouselBtn carouselNext">&gt;</button>
+            </div>
+        </article>
+    </section>
+
+    <script src="script.js"></script>
 </main>
 </body>
 </html>
