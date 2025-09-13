@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 
-
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,12 +14,13 @@
 
 <body>
 <div class="backgroundImg"></div>
-<header id="header">
-    <section>
+<header>
+    <section id="header">
         <h1>Velkommen til min Portføjle!</h1>
-        <img src="assets/name1.gif" alt="Elliot Lyhne name GIF" class="boxShadow">
+        <img src="assets/name.gif" alt="Elliot Lyhne name GIF" class="boxShadow">
     </section>
 </header>
+
 <nav>
     <ul>
         <li><a href="#aboutMe">Om mig</a></li>
@@ -29,8 +28,9 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#business">Erhverv</a></li>
         <li><a href="#hobbies">Hobby</a></li>
+        <li><a href="#contact">Kontakt</a></li>
     </ul>
-</nav>
+</nav><!--Nav er detached fra header da den følger siden -->
 
 <main>
     <section id="aboutMe">
@@ -149,7 +149,7 @@
 
             <div class="floatingCard boxShadow" id="card2">
                 <div class="floatingFlexbox">
-                    <img src="assets/moveforce1.png" alt="">
+                    <img src="assets/moveforce.png" alt="">
                     <div>
                         <h3>IT-Projektleder</h3>
                         <p>2021-2023</p>
@@ -212,7 +212,46 @@
         </article>
     </section>
 
-    <script src="script.js"></script>
+    <section id="contact">
+        <h2 class="sectionHeader">Kontakt mig</h2>
+        <article id="callContainer">
+            <ul>
+                <li class="boxShadow">
+                    <a href="https://github.com/Hunder222" target="_blank">
+                        <div class="boxShadow">
+                            <h3>GitHub</h3>
+                            <img src="assets/github-mark-white.png" alt="Github logo">
+                        </div>
+                    </a>
+                </li>
+                <li class="boxShadow">
+                    <a href="https://www.linkedin.com/in/elliotlyhne/" target="_blank">
+                        <div class="boxShadow">
+                            <h3>LinkedIn</h3>
+                            <img src="assets/InBug-White.png" alt="LinkedIn logo">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:hunterlyhne@gmail.com" target="_blank">
+                        <div class="boxShadow">
+                            <h3>Mail</h3>
+                            <img src="assets/inbox.svg" alt="Mail icon">
+                        </div>
+                    </a>
+                </li>
+                <li id="call">
+                    <a href="https://rickrolled.com/" target="Secret">
+                        <div class="boxShadow">
+                            <h3>Flere oplysninger!</h3>
+                            <img src="assets/call.svg" alt="Mail icon">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </article>
+    </section>
 </main>
 </body>
+<script src="script.js"></script>
 </html>

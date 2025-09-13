@@ -110,6 +110,37 @@ function updateHueRotation() {
 // kør updateHueRotation hver gang der scrolles
 window.addEventListener('scroll', updateHueRotation);
 
+
+
+
+
+const callDiv = document.getElementById('call');
+const callSection = document.getElementById('callContainer');
+
+callDiv.addEventListener('mouseover', () => {
+    // vinduets dimensioner
+    const winWidth = callSection.clientWidth;
+    const winHeight = callSection.clientHeight;
+
+    // div dimensioner
+    const divWidth = callDiv.offsetWidth;
+    const divHeight = callDiv.offsetHeight;
+
+    // begrænser til at vælge coords i midten af siden
+    const xMax = divWidth-winWidth;
+    const yMax = divHeight-winHeight;
+
+    // tilfældig position minus div størrelse
+    const x = Math.random() * xMax;
+    const y = Math.random() * yMax;
+
+    // sæt div positionen
+    callDiv.style.left = `${x}px`;
+    callDiv.style.top = `${y}px`;
+});
+
+
+
 // Sørger for scripts kører når siden loader
 updateLines();
 updateCarousel(activeSlideIndex);

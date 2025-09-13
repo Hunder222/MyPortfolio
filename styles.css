@@ -1,5 +1,5 @@
 {
-    /* Tilføj ´*´ */
+    /* Tilføj ´*{´ */
     outline-style: dotted;
     outline-color: red;
     outline-offset: -1px;
@@ -26,7 +26,7 @@ html{
 
 .backgroundImg{
     position: fixed;
-    background-image: url("assets/portfolio-BG2.svg");
+    background-image: url("assets/portfolio-bg.svg");
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -37,6 +37,10 @@ html{
 section{
     height: 100vh;
     scroll-snap-align: start;
+}
+
+a{
+    text-decoration: none;
 }
 
 .sectionHeader{
@@ -92,10 +96,6 @@ nav{
     z-index: 3;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 
-}
-
-nav a{
-    text-decoration: none;
 }
 
 nav ul{
@@ -518,6 +518,52 @@ nav li{
 
 .txtCarouselItem.active{
     opacity: 1;
+}
+
+/*</editor-fold>*/
+
+
+
+/*<editor-fold desc="Section #hobbies">*/
+
+#contact article{
+    display: flex;
+    justify-content: center;
+    margin: 0 8vw 0 8vw;
+    height: 60vh;
+}
+
+#contact ul{
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+#contact li{
+    text-align: center;
+    position: relative;
+    width: 15vw;
+}
+
+#contact div{
+    border-radius: 2vw;
+    overflow: hidden;
+    padding: 1vw;
+    background-color: #333335;
+}
+
+#contact img{
+    margin-top: 1vh;
+    width: 10vw;
+}
+
+.call{
+    position: absolute;
+    transition: all 0.3s ease;
+    z-index: 3;
 }
 
 /*</editor-fold>*/
